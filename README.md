@@ -2,7 +2,7 @@
 
 ## Project Description
 
-The Project is meant to be a spike detector with OCR for 1v1 boards on Tetr.io. I first screen captured a VOD livestream of a Tetr.io tournament which is the video I would be OCRing. Since the OCR process can take anywhere from 0.5-3 seconds, and I wanted to try to capture the spikes in real time, I worked on minimizing the amount of image frames that I wanted to OCR. To do this, I first preprocessed the frames with techniques such as gray scaling, gaussian bluring, thresholding etc. Then I found the contours of this preprocessed frame and filtered them down so it only contained the contours of numbers which is the spiek countours I would want to OCR. After these frames were found they were put into a queue where the OCR process is done and only the final value of the spike is used.
+This Project is meant to be a spike detector with OCR for 1v1 boards on Tetr.io. I first screen captured a VOD livestream of a Tetr.io tournament which is the video I would be OCRing. Since the OCR process can take anywhere from 0.5-3 seconds, and I wanted to try to capture the spikes in real time, I worked on minimizing the amount of image frames that I wanted to OCR. To do this, I first preprocessed the frames with techniques such as gray scaling, gaussian blurring, thresholding etc. Then I found the contours of this preprocessed frame and filtered them down so it only contained the contours of numbers which is the spike contours I would want to OCR. After these frames were found they were put into a queue where the OCR process is done and only the final value of the spike is used.
 
 ## Overview of How Spikes work in TETR.IO
 
