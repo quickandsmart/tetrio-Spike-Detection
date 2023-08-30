@@ -1,0 +1,5 @@
+easyocr==1.7.0
+numpy==1.21.5
+opencv_contrib_python==4.6.0.66
+opencv_python==4.8.0.74
+pypiwin32
